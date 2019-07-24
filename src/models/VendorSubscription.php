@@ -11,4 +11,9 @@ class VendorSubscription extends Model
         'from_date',
         'to_date',
     ];
+	
+	public function vendor()
+	{
+		return $this->belongsTo(Vendor::class);
+	}
 }

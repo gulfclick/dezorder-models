@@ -20,4 +20,9 @@ class VendorBranch extends Model
         'latitude',
         'longitude',
     ];
+	
+	public function vendor()
+    {
+        return $this->belongsTo(Vendor::class);
+    }
 }
