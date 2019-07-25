@@ -4,7 +4,7 @@
     "description": "models for cargo-logistics",
 	"autoload": {
         "psr-4": {
-            "cargo-logistics\\models\\": "src/Models/"
+            "cargo-logistics\\models\\": "src/"
         }
     },
     "authors": [
