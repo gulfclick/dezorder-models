@@ -1,5 +1,5 @@
 {
-    "name": "cargo-logistics-models",
+    "name": "cargo-logistics/models",
     "type": "library",
     "description": "models for cargo-logistics",
     "authors": [
