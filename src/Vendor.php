@@ -1,6 +1,6 @@
 <?php
 
-namespace CargoLogisticsModels;
+namespace CargoLogisticsModels\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
