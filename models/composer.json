@@ -2,6 +2,11 @@
     "name": "cargo-logistics/models",
     "type": "library",
     "description": "models for cargo-logistics",
+	"autoload": {
+        "psr-4": {
+            "cargo-logistics\\models\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Navid Hero",
