@@ -11,30 +11,30 @@ class Job extends Model
         'vendor_id',
         'driver_id',
         'instructions',
-	    'distance',
-	    'status',
+        'distance',
+        'status',
 
         // pickup
         'pickup_address',
-		'pickup_description',
+        'pickup_description',
         'pickup_place_type',
         'pickup_latitude',
         'pickup_longitude',
         'pickup_date',
         'pickup_time',
-	    'pickup_contact_person',
-	    'pickup_contact_phone',
+        'pickup_contact_person',
+        'pickup_contact_phone',
 
         // destination
         'dropoff_address',
-		'dropoff_description',
+        'dropoff_description',
         'dropoff_place_type',
         'dropoff_latitude',
         'dropoff_longitude',
         'dropoff_date',
         'dropoff_time',
-	    'dropoff_contact_person',
-	    'dropoff_contact_phone',
+        'dropoff_contact_person',
+        'dropoff_contact_phone',
 
     ];
 
