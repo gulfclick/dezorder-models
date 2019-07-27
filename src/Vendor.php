@@ -41,4 +41,9 @@ class Vendor extends Model
         });
     }
 
+    public function getAddress($vendorId)
+	{
+		$vendor = Vendor::find($vendorId);
+		return $vendor->country . ' ' . $vendor->area . ' ' . $vendor->block . ' ' . $vendor->street . ' ' . $vendor->avenue . ' ' . $vendor->building_number;
+	}
 }

@@ -25,4 +25,10 @@ class VendorBranch extends Model
     {
         return $this->belongsTo(Vendor::class);
     }
+
+    public function getAddress($vendorBranchId)
+	{
+		$vendorBranch = Vendor::find($vendorBranchId);
+		return $vendorBranch->country . ' ' . $vendorBranch->area . ' ' . $vendorBranch->block . ' ' . $vendorBranch->street . ' ' . $vendorBranch->avenue . ' ' . $vendorBranch->building_number;
+	}
 }
