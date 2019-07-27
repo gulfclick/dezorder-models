@@ -8,11 +8,11 @@ class Job extends Model
 {
     protected $fillable = [
         // basic information
-		'vendor_id',
+        'vendor_id',
         'driver_id',
         'distance',
         'instructions',
-		'unique_number',
+        'unique_number',
         'status',
 
         // pickup
