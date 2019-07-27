@@ -25,6 +25,8 @@ class Job extends Model
         'pickup_longitude',
         'pickup_date',
         'pickup_time',
+		'pickup_contact_person',
+		'pickup_contact_phone',
 
         // destination
         'destination_country',
@@ -38,6 +40,8 @@ class Job extends Model
         'destination_longitude',
         'destination_date',
         'destination_time',
+		'destination_contact_person',
+		'destination_contact_phone',
 
     ];
 
