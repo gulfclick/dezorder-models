@@ -11,6 +11,7 @@ class Job extends Model
         'vendor_id',
         'driver_id',
         'instructions',
+	    'distance',
 	    'status',
 
         // pickup
