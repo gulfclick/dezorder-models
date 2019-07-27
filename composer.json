@@ -2,7 +2,7 @@
     "name": "cargo-logistics/models",
     "type": "library",
     "description": "models for cargo-logistics",
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "cargo-logistics\\models\\": "src/"
         }
