@@ -14,12 +14,7 @@ class Job extends Model
 	    'status',
 
         // pickup
-        'pickup_country',
-        'pickup_area',
-        'pickup_block',
-        'pickup_street',
-        'pickup_avenue',
-        'pickup_building_number',
+        'pickup_address',
         'pickup_place_type',
         'pickup_latitude',
         'pickup_longitude',
@@ -29,19 +24,14 @@ class Job extends Model
 	    'pickup_contact_phone',
 
         // destination
-        'destination_country',
-        'destination_area',
-        'destination_block',
-        'destination_street',
-        'destination_avenue',
-        'destination_building_number',
-        'destination_place_type',
-        'destination_latitude',
-        'destination_longitude',
-        'destination_date',
-        'destination_time',
-	    'destination_contact_person',
-	    'destination_contact_phone',
+        'dropoff_address',
+        'dropoff_place_type',
+        'dropoff_latitude',
+        'dropoff_longitude',
+        'dropoff_date',
+        'dropoff_time',
+	    'dropoff_contact_person',
+	    'dropoff_contact_phone',
 
     ];
 
@@ -53,17 +43,5 @@ class Job extends Model
     public function vendor()
     {
         return $this->belongsTo(Vendor::class);
-    }
-
-    public function pickupAddress($jobId)
-    {
-        $job = Job::find($jobId);
-        return $job->pickup_country . ' ' . $job->pickup_area . ' ' .  $job->pickup_block . ' ' . $job->pickup_street . ' ' . $job->pickup_avenue . ' ' . $job->pickup_building_number;
-    }
-
-    public function destinationAddress($jobId)
-    {
-        $job = Job::find($jobId);
-        return $job->destination_country . ' ' . $job->destination_area . ' ' .  $job->destination_block . ' ' . $job->destination_street . ' ' . $job->destination_avenue . ' ' . $job->destination_building_number;
     }
 }
