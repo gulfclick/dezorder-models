@@ -17,6 +17,7 @@ class Driver extends Model
         'commission_percent',
         'licence_file',
         'licence_expiration_date',
+        'availability',
         'account_status',
     ];
 
@@ -24,5 +25,10 @@ class Driver extends Model
     {
         return $this->hasMany(VendorDriver::class);
     }
+	
+	public function changeAvailability($id, $availavility)
+	{
+		Driver::find(id)->update([availability => $availavility]);
+	}
 
 }
