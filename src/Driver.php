@@ -28,7 +28,7 @@ class Driver extends Model
 	
 	public function changeAvailability($id, $availavility)
 	{
-		Driver::find(id)->update([availability => $availavility]);
+		Driver::find($id)->update(['availability' => $availavility]);
 	}
 
 }
