@@ -26,9 +26,9 @@ class Driver extends Model
         return $this->hasMany(VendorDriver::class);
     }
 	
-	public function changeAvailability($id, $availavility)
+	public function changeAvailability($id, $availability)
 	{
-		Driver::find($id)->update(['availability' => $availavility]);
+		Driver::find($id)->update(['availability' => $availability]);
 	}
 
 }
