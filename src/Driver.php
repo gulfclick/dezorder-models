@@ -31,4 +31,9 @@ class Driver extends Model
 		Driver::find($id)->update(['availability' => $availability]);
 	}
 
+    public function locations()
+    {
+        return $this->hasMany(DriverLocation::class);
+    }
+	
 }
