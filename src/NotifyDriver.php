@@ -7,9 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class NotifyDriver extends Model
 {
     protected $fillable = [
-        'driver_id',
-        'job_id',
-        'status'
+        'driver_id', 'job_id', 'status'
     ];
 
     public function driver()
