@@ -15,6 +15,7 @@ class Job extends Model
         'unique_number',
         'status',
         'proof',
+        'additional_note',
 
         // pickup
         'pickup_address',
