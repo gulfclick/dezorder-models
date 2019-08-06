@@ -19,7 +19,7 @@ class Driver extends Model
         'licence_expiration_date',
         'availability',
         'account_status',
-        'pushy_token',
+        'pushy_device_token',
     ];
 
     public function vendors()
