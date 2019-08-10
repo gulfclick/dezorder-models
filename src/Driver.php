@@ -11,6 +11,7 @@ class Driver extends Model
         'email',
         'phone',
         'password',
+        'profile_photo',
         'transport_mode',
         'driver_type',
         'fixed_commission',
@@ -19,6 +20,7 @@ class Driver extends Model
         'licence_expiration_date',
         'availability',
         'account_status',
+        'last_active',
         'pushy_device_token',
     ];
 
