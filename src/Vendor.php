@@ -24,6 +24,8 @@ class Vendor extends Model
         'place_type',
         'latitude',
         'longitude',
+        'delivery_fee',
+        'service_charge',
         'account_status',
     ];
 
