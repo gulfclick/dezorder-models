@@ -39,4 +39,9 @@ class Driver extends Model
         return $this->hasMany(DriverLocation::class);
     }
 	
+	public function getRate()
+	{
+		return $this->hasMany(DriverJobRate::class);
+	}
+	
 }
