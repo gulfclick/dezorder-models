@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class JobHistory extends Model
 {
     protected $fillable = [
-        'job_id', 'driver_id', 'status'
+        'job_id', 'driver_id', 'status', 'duration_minutes'
     ];
 
     public function job()
