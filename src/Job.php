@@ -9,6 +9,7 @@ class Job extends Model
     protected $fillable = [
         // basic information
         'vendor_id',
+        'vendor_branch_id',
         'driver_id',
         'distance',
         'instructions',
