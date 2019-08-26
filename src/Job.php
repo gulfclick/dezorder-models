@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
 {
+	use SoftDeletes;
+	
     protected $fillable = [
         // basic information
         'vendor_id',
