@@ -30,7 +30,7 @@ class VendorBranch extends Model
 
     public function getAddress($vendorBranchId)
 	{
-		$vendorBranch = Vendor::find($vendorBranchId);
+		$vendorBranch = VendorBranch::find($vendorBranchId);
 		return $vendorBranch->country . ' ' . $vendorBranch->area . ' ' . $vendorBranch->block . ' ' . $vendorBranch->street . ' ' . $vendorBranch->avenue . ' ' . $vendorBranch->building_number;
 	}
 }
