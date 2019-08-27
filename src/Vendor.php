@@ -21,6 +21,8 @@ class Vendor extends Model
         'street',
         'avenue',
         'building_number',
+        'floor',
+        'unit_number',
         'place_type',
         'latitude',
         'longitude',
