@@ -10,8 +10,8 @@ class VendorBranch extends Model
         'vendor_id',
         'name',
         'mobile',
-        'country',
-        'area',
+        'country_id',
+        'area_id',
         'block',
         'street',
         'avenue',
@@ -24,6 +24,16 @@ class VendorBranch extends Model
 		'contact_person'
     ];
 	
+	public function country()
+	{
+		return $this->belongsTo(Country::class);
+	}
+	
+	public function area()
+	{
+		return $this->belongsTo(Area::class);
+	}
+	
 	public function vendor()
     {
         return $this->belongsTo(Vendor::class);
@@ -32,6 +42,8 @@ class VendorBranch extends Model
     public function getAddress($vendorBranchId)
 	{
 		$vendorBranch = VendorBranch::find($vendorBranchId);
-		return $vendorBranch->country . ' ' . $vendorBranch->area . ' ' . $vendorBranch->block . ' ' . $vendorBranch->street . ' ' . $vendorBranch->avenue . ' ' . $vendorBranch->building_number;
+		$country = Country::find($vendorBranch->country_id)->name;
+		$area = Area::find($vendorBranch->area_id)->name;
+		return $country . ' ' . $area . ' ' . $vendorBranch->block . ' ' . $vendorBranch->street . ' ' . $vendorBranch->avenue . ' ' . $vendorBranch->building_number;
 	}
 }

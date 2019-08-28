@@ -15,8 +15,8 @@ class Vendor extends Model
         'password',
         'menu',
         'contact_person',
-        'country',
-        'area',
+        'country_id',
+        'area_id',
         'block',
         'street',
         'avenue',
@@ -30,6 +30,16 @@ class Vendor extends Model
         'service_charge',
         'account_status',
     ];
+	
+	public function country()
+	{
+		return $this->belongsTo(Country::class);
+	}
+	
+	public function area()
+	{
+		return $this->belongsTo(Area::class);
+	}
 
     public function drivers()
     {
@@ -48,6 +58,8 @@ class Vendor extends Model
     public function getAddress($vendorId)
 	{
 		$vendor = Vendor::find($vendorId);
-		return $vendor->country . ' ' . $vendor->area . ' ' . $vendor->block . ' ' . $vendor->street . ' ' . $vendor->avenue . ' ' . $vendor->building_number;
+		$country = Country::find($vendor->country_id)->name;
+		$area = Area::find($vendor->area_id)->name;
+		return $country . ' ' . $area . ' ' . $vendor->block . ' ' . $vendor->street . ' ' . $vendor->avenue . ' ' . $vendor->building_number;
 	}
 }
