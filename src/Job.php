@@ -54,4 +54,9 @@ class Job extends Model
     {
         return $this->belongsTo(Vendor::class);
     }
+
+    public function branch()
+    {
+        return $this->belongsTo(VendorBranch::class, 'vendor_branch_id', 'id');
+    }
 }

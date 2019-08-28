@@ -21,6 +21,7 @@ class VendorBranch extends Model
         'place_type',
         'latitude',
         'longitude',
+		'contact_person'
     ];
 	
 	public function vendor()
