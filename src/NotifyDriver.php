@@ -19,4 +19,11 @@ class NotifyDriver extends Model
     {
         return $this->belongsTo(Job::class);
     }
+	
+	
+	
+	public function getDriverDistanceAttribute($value)
+	{
+		$this->attributes['driver_distance'] = round($value/1000, 2);
+	}
 }

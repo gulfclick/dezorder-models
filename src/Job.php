@@ -59,4 +59,9 @@ class Job extends Model
     {
         return $this->belongsTo(VendorBranch::class, 'vendor_branch_id', 'id');
     }
+	
+	public function getDistanceAttribute($value)
+	{
+		$this->attributes['distance'] = round($value/1000, 2);
+	}
 }
