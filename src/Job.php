@@ -62,6 +62,6 @@ class Job extends Model
 	
 	public function getDistanceAttribute($value)
 	{
-		$this->attributes['distance'] = round($value/1000, 2);
+		return round($value/1000, 2, PHP_ROUND_HALF_UP);
 	}
 }

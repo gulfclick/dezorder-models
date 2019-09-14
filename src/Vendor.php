@@ -28,6 +28,8 @@ class Vendor extends Model
         'longitude',
         'delivery_fee',
         'service_charge',
+        'access_admin_drivers',
+        'has_own_drivers',
         'account_status',
     ];
 	
