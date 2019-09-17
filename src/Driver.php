@@ -18,6 +18,7 @@ class Driver extends Model
         'commission_percent',
         'licence_file',
         'licence_expiration_date',
+        'plate_number',
         'availability',
         'account_status',
         'last_active',
