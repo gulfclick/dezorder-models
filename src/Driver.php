@@ -42,7 +42,7 @@ class Driver extends Model
 	
     public function getRate()
     {
-        return $this->hasMany(DriverJobRate::class);
+        return $this->hasMany(DriverJobRate::class)->avg('rate');
     }
 	
 }
