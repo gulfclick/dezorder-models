@@ -1,7 +1,7 @@
 {
-    "name": "cargo-logistics/models",
+    "name": "dezorder/models",
     "type": "library",
-    "description": "models for cargo-logistics",
+    "description": "models for dezorder/models",
     "autoload": {
         "psr-4": {
             "cargo-logistics\\models\\": "src/"
@@ -9,8 +9,8 @@
     },
     "authors": [
         {
-            "name": "Navid Hero",
-            "email": "navid.hero.1@gmail.com",
+            "name": "Sajjad",
+            "email": "sajjad.rezaei9090@gmail.com",
             "role": "Developer"
         }
     ]

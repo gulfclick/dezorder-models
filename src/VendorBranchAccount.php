@@ -1,6 +1,6 @@
 <?php
 
-namespace CargoLogisticsModels;
+namespace DezOrderModels;;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model;
